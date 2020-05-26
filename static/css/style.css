@@ -1,0 +1,154 @@
+body{
+    
+    background-image: linear-gradient(to right,#175d8c 0%,#81d1f1 100%);
+    overflow-x: hidden;
+    
+}
+
+#filessub{
+    position: absolute;
+    left:500px;
+    font-size: 30px;
+    top:650px;
+    font-family:'open_regular',"Cambria";
+    
+    padding: 10px;
+    
+}
+#filebtn{
+    position: absolute;
+    left:550px;
+    font-size: 30px;
+    top:800px;
+    font-family:'open_regular',"Cambria";
+    border:1px solid #044372;
+    background: linear-gradient(rgb(226, 14, 180),rgb(206, 37, 37));
+    width:20%;
+    border-radius: 10px;
+    padding: 10px;
+}
+#filebtn:hover{
+    background: radial-gradient(#fd00da,#19d7f8);
+    transition:0.8s;
+    border: 1px solid yellowgreen; 
+    
+}
+
+
+.one{
+	margin-left:550px;
+	top:20px;
+    font-family:'open_regular',"Cambria";
+    color:#f7f7f2;
+	font-size: 40px;
+    color: #fcbf49;
+}
+
+
+.two{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+    font-size: 30px;
+    margin-top:-60px;
+    font-family:'open_regular',"Cambria";
+    color:#f7f7f2;
+}
+
+
+.three{
+    /*position: absolute;
+    left:450px;*/
+	display:flex;
+	align-items:center;
+	justify-content:center;
+    font-size: 30px;
+    top:-160px;
+    font-family:'open_regular',"Cambria";
+    color:#f7f7f2;
+}
+
+.mod{
+    position: absolute;
+    left:500px;
+    font-size: 30px;
+    top:190px;
+    font-family:'open_regular',"Cambria";
+    color:#000000;
+}
+
+
+.or{
+    position: absolute;
+    left:650px;
+    font-size: 30px;
+    top:550px;
+    font-family:'open_regular',"Cambria";
+    color:#000000;
+}
+
+.btn-info{
+    
+    left:545px;
+    font-size: 30px;
+    border-radius: 10px;
+    cursor:pointer;
+	background: #e63946;
+    border: 1px solid #e63946;
+    font-family:'open_regular',"arial";
+    top:510px;
+    position: absolute;
+    width:20%;
+    color:#f1faee;
+    
+}
+textarea{
+    position: absolute;
+	left:280px;
+	top:280px;
+    border:1px solid #044372;
+    font-family:'open_regular',arial;
+    font-size: 30px;
+    border-radius: 10px;
+} 
+
+
+.btn-info:hover{
+    /*background: radial-gradient(#fd00da,#19d7f8);*/
+	background:#f1faee;
+	border:1px solid #f1faee;
+    transition:0.3s;
+	color: #e63946;
+	
+    
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-image: linear-gradient(to left,#175d8c 0%,#81d1f1 100%)
+  }
+  .two{
+	  visibility:hidden;
+  }
+  .three{
+	  visibility:hidden;
+  }
+  .mod{
+	 left:100px;
+  }
+  textarea{
+	height:200px;
+	width:462px;
+	display:block;
+	left:15px;
+  }
+  .btn-info{
+	  left:210px;
+	  font-size:25px;
+  }
+}
+
+
+
+
+

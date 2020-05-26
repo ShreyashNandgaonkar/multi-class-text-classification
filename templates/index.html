@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Text classifier</title>
+	
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+	
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<p class="one"> Text Classifier<br><br></p>
+		<p class="two">Text will be classified into categories like <b style="color:#6c3304">Politics</b>, <b style="color:#6c3304">Entertainment</b>, <b style="color:#6c3304">Business</b>, <b style="color:#6c3304">Sports</b> & <b style="color:#6c3304">Technology</b>.<br></p>
+		<p class="three">Test your sentence or a paragraph.<br></p>
+		</div>
+	</header>
+
+	<div class="ml-container">
+		<form action="{{ url_for('predict')}}" method="POST">
+		<p class="mod"><b>Enter Your text below:<b></p>
+		<!-- <input type="text" name="comment"/> -->
+		<textarea name="comment" rows="6" cols="50" placeholder="Your text....."></textarea>
+		<br>
+		<br>
+		<input type="submit" class="btn-info" value="Predict">
+	</form>
+	</div>
+	<!--<div class="comehome">
+		<p class="or">OR</p>
+		<form action="{{ url_for('predict')}}" method="POST">
+			<input type="file" id="filessub" accept=".xlsx,.xls,image/*,.doc, .docx,.ppt, .pptx,.txt,.pdf">
+			<input type="submit" id="filebtn" value="Submit"><br>
+			<br>
+		  </form>
+	</div>-->
+	
+</body>
+</html>
